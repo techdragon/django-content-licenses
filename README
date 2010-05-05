@@ -21,3 +21,15 @@ INSTALLED_APPS = [
 
 Provides a modelfield:  LicenseField
 
+
+Expected template variables
+
+content_title
+content_url
+author_name
+author_url
+license_title
+license_url
+extra_perms_title
+extra_perms_url
+template_name

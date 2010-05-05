@@ -46,7 +46,7 @@ class License(models.Model):
         return self.name
 
     def _template_name(self):
-        return '%s.html' % self.slug
+        return 'content_licenses/%s.html' % self.slug
     template_name = property(_template_name)
     
     class Meta:
