@@ -1,0 +1,23 @@
+
+django-content-licenses README
+-------------------------
+
+Requires:
+    - Django
+
+Installation
+------------
+
+1. Put 'content_licenses' module in PYTHON PATH
+
+Configuration
+-------------
+settings.py:
+
+INSTALLED_APPS = [
+	'content_licenses',
+]
+
+
+Provides a modelfield:  LicenseField
+
