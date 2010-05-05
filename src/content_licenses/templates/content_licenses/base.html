@@ -1,9 +1,18 @@
 <div id="license" class="license">
-    The article <em><a title="{{ content_title }}" href="{{ content_url }}">{{ content_title }}</a></em>
-    is copyrighted &copy; by <em><a title="{{ author_name }}" href="{{ author_url }}">{{ author_name }}</a></em>.
-    Unless otherwise expressly stated, {% block license_terms %}{% endblock %}
-    {% if extra_perms_url %}
-        Terms and conditions beyond the scope of this license may be available at
-        <a title="{{ extra_perms_title }}" href="{{ extra_perms_url }}">{{ extra_perms_title }}</a>.
-    {% endif %}
+    {% block copyright %}
+        Copyright &copy; {{ pubdate|date:"Y" }} {{ author_name }}.
+    {% endblock %}
+    {% block rights %}{% endblock %}
+    {% block attribution %}
+        The article <em><a title="{{ content_title }}" href="{{ content_url }}">{{ content_title }}</a></em>
+        by <em><a title="{{ author_name }}" href="{{ author_url }}">{{ author_name }}</a></em>,
+    {% endblock %}
+    unless otherwise expressly stated,
+    {% block terms %}{% endblock %}
+    {% block extra_perms %}
+	    {% if extra_perms_url %}
+	        Terms and conditions beyond the scope of this license may be available at
+	        <a title="{{ extra_perms_title }}" href="{{ extra_perms_url }}">{{ extra_perms_title }}</a>.
+	    {% endif %}
+	{% endblock %}
 </div> <!-- license -->
