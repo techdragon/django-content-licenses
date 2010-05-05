@@ -28,7 +28,7 @@ from django.db.models.loading import cache
 
 
 class LicenseAdmin(admin.ModelAdmin):
-    list_display = ('name', 'is_active', 'template')
+    list_display = ('name', 'abbreviation', 'is_active', 'template_name')
     prepopulated_fields = {
         'slug' : ('name',),
     }

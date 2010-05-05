@@ -28,9 +28,10 @@ from django.db import models
 
 class License(models.Model):
 
-    name = models.CharField(max_length=200, unique=True,
+    name = models.CharField(max_length=100, unique=True,
         help_text="""The full name of the license.""")
-    slug = models.SlugField(unique=True)
+    slug = models.SlugField(max_length=100, unique=True,
+        help_text="""This is used to determine the license's template name. For example, if the slug is 'my-license', then the template name is expected to be 'content_licenses/my-license.html'.""")
     abbreviation = models.CharField(max_length=50, blank=True, null=True,
         help_text="""The short name of the license.""")
     url = models.URLField(verify_exists=True, blank=True, null=True,
@@ -38,14 +39,16 @@ class License(models.Model):
     logo = models.URLField(verify_exists=True, blank=True, null=True,
         help_text=""""A logo/icon/badge that is clearly associated with the license.""")
     description = models.TextField(blank=True, null=True)
-    template = models.CharField(max_length=200,
-        help_text="""Enter a relative path to the template for this license.""")
     is_active = models.BooleanField(default=True,
         help_text="""Disable, if license shouldn't be available to users any more.""")
 
     def __unicode__(self):
         return self.name
 
+    def _template_name(self):
+        return '%s.html' % self.slug
+    template_name = property(_template_name)
+    
     class Meta:
         ordering = ('name', )
         verbose_name = 'license'
