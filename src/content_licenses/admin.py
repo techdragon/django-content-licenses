@@ -23,8 +23,6 @@
 #  limitations under the License.
 #
 
-import datetime
-
 from django.contrib import admin
 from django.db.models.loading import cache
 
@@ -35,5 +33,5 @@ class LicenseAdmin(admin.ModelAdmin):
         'slug' : ('name',),
     }
 
-admin.site.register(cache.get_model('content_license', 'License'), LicenseAdmin)
+admin.site.register(cache.get_model('content_licenses', 'License'), LicenseAdmin)
 
