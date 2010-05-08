@@ -18,6 +18,14 @@ INSTALLED_APPS = [
 	'content_licenses',
 ]
 
+Run: python manage.py syncdb
+
+Import initial data with:
+
+python manage.py loaddata content_licenses
+
+
+USAGE
 
 Provides a modelfield:  LicenseField
 
