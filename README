@@ -24,6 +24,7 @@ Import initial data with:
 
 python manage.py loaddata content_licenses
 
+( Dumped with:  python manage.py dumpdata --indent=4 content_licenses.License > content_licenses.json )
 
 USAGE
 
