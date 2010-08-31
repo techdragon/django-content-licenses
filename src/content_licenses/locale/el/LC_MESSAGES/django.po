@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-01 01:56+0300\n"
+"POT-Creation-Date: 2010-09-01 02:00+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\content_licenses\public-domain.html.py:5
+#: .\templates\content_licenses\base.html.py:2
+msgid "Copyright"
+msgstr "Copyright"
+
+#: .\templates\content_licenses\base.html.py:6
+msgid "The article"
+msgstr "Το άρθρο"
+
+#: .\templates\content_licenses\base.html.py:7
+msgid "by"
+msgstr "από"
+
+#: .\templates\content_licenses\base.html.py:9
+msgid "unless otherwise expressly stated"
+msgstr "εκτός αν ρητά αναφέρεται διαφορετικά"
+
+#: .\templates\content_licenses\base.html.py:13
 msgid ""
-"\n"
-"is released in the <strong>Public Domain</strong> and all intellectual "
-"property rights are waived by\n"
-"the author. Therefore, it may be freely reproduced, distributed, "
-"transmitted, used,\n"
-"modified, built upon, or otherwise exploited by anyone for any purpose, "
-"commercial\n"
-"or non-commercial, and in any way, including by methods that have not yet "
-"been invented or conceived.\n"
-msgstr "διανέμεται στο <strong>Δημόσιο Ιστοχώρο</strong> και ο συγγραφέας αποποιείται όλα τα πνευματικά δικαιώματα. Επομένως, μπορεί να αναπαραγθεί, διανεμηθεί, μεταδοθεί, χρησιμοποιηθεί, τροποποιηθεί, αποτελέσει τη βάση για περαιτέρω δημιουργία ή αλλιώς να γίνει αντικείμενο εκμετάλλευσης από οποιονδήποτε για οποιονδήποτε σκοπό, εμπορικό ή μη-εμπορικό, και κατά οποιονδήποτε τρόπο, συμπεριλαμβανομένων μεθόδων που δεν έχουν ακόμη εφευρεθεί η διανοηθεί."
+"Terms and conditions beyond the scope of this license may be available at"
+msgstr "Όροι και συνθήκες που υπερβαίνουν το πεδίο της παρούσας άδειας ενδέχεται να είναι διαθέσιμα στο"
 
