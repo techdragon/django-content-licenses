@@ -19,7 +19,7 @@ msgstr ""
 
 #: .\templates\content_licenses\all-rights-reserved.html.py:5
 msgid "All Rights Reserved"
-msgstr "Με επιφύλαξη παντός δικαιώματος"
+msgstr "All Rights Reserved"
 
 #: .\templates\content_licenses\all-rights-reserved.html.py:8
 msgid ""
@@ -30,7 +30,7 @@ msgstr "αποτελεί πνευματική ιδιοκτησία του συγ
 
 #: .\templates\content_licenses\base-creative-commons.html.py:3
 msgid "Some Rights Reserved"
-msgstr "Με επιφύλαξη μερικών δικαιωμάτων"
+msgstr "Some Rights Reserved"
 
 #: .\templates\content_licenses\base-creative-commons.html.py:6
 msgid "is licensed under a"
@@ -42,7 +42,7 @@ msgstr "άδειας"
 
 #: .\templates\content_licenses\base.html.py:6
 msgid "Copyright"
-msgstr "Πνευματική ιδιοκτησία"
+msgstr "Copyright"
 
 #: .\templates\content_licenses\base.html.py:10
 msgid "The article"
