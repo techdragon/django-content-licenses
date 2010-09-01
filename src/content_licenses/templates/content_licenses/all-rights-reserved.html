@@ -2,7 +2,7 @@
 
 {% load i18n %}
 
-{% blocktrans rights %}All Rights Reserved.{% endblocktrans %}
+{% block rights %}{% trans "All Rights Reserved" %}.{% endblock %}
 
 {% block terms %}
 {% trans "is copyrighted material and you <em>may not</em> copy, reproduce, republish, download, post, broadcast or transmit the article in any way without first obtaining a written permission by" %} <em>{{ author_name }}</em>.

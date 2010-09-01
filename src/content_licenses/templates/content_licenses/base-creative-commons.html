@@ -1,7 +1,7 @@
 {% extends "content_licenses/base.html" %}
 
-{% block rights %}Some Rights Reserved.{% endblock %}
+{% block rights %}{% trans "Some Rights Reserved" %}.{% endblock %}
 
 {% block terms %}
-is licensed under a <a rel="license" title="License of {{ content_title }}" href="{{ license_url }}">{{ license_name }}</a> license.
+{% trans "is licensed under a" %} <a rel="license" title="License of {{ content_title }}" href="{{ license_url }}">{{ license_name }}</a> {% trans "license" %}.
 {% endblock %}
