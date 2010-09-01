@@ -18,7 +18,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\templates\content_licenses\all-rights-reserved.html.py:5
-#, fuzzy
 msgid "All Rights Reserved"
 msgstr "Με επιφύλαξη παντός δικαιώματος"
 
@@ -30,7 +29,6 @@ msgid ""
 msgstr "αποτελεί πνευματική ιδιοκτησία του συγγραφέα και <em>απαγορεύεται</em> η αντιγραφή, αναπαραγωγή, επανέκδοση, καταφόρτωση, αποστολή, εκπομπή ή μετάδοση του άρθρου κατά οποιονδήποτε τρόπο χωρίς την έγγραφη άδεια του"
 
 #: .\templates\content_licenses\base-creative-commons.html.py:3
-#, fuzzy
 msgid "Some Rights Reserved"
 msgstr "Με επιφύλαξη μερικών δικαιωμάτων"
 
