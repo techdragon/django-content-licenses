@@ -3,14 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-01 02:00+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-09-01 02:55+0300\n"
+"PO-Revision-Date: 2010-09-01 02:58+0200\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -18,9 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: .\templates\content_licenses\all-rights-reserved.html.py:3
+msgid "All Rights Reserved."
+msgstr "Με επιφύλαξη παντός δικαιώματος."
+
+#: .\templates\content_licenses\all-rights-reserved.html.py:5
+#, python-format
+msgid "is copyrighted material and you <em>may not</em> copy, reproduce, republish, download, post, broadcast or transmit the article in any way without first obtaining a written permission by <em>%(author_name)s</em>."
+msgstr "αποτελεί πνευματική ιδιοκτησία της κατασκευάστριας εταιρίας και <em>απαγορεύεται</em> η αντιγραφή, αναπαραγωγή, επανέκδοση, καταφόρτωση, αποστολή, εκπομπή ή μετάδοση του άρθρου κατά οποιονδήποτε τρόπο χωρίς την έγγραφη άδεια του <em>%(author_name)</em>."
+
 #: .\templates\content_licenses\base.html.py:2
 msgid "Copyright"
-msgstr "Copyright"
+msgstr "Πνευματική ιδιοκτησία"
 
 #: .\templates\content_licenses\base.html.py:6
 msgid "The article"
@@ -28,14 +36,17 @@ msgstr "Το άρθρο"
 
 #: .\templates\content_licenses\base.html.py:7
 msgid "by"
-msgstr "από"
+msgstr "του"
 
 #: .\templates\content_licenses\base.html.py:9
 msgid "unless otherwise expressly stated"
 msgstr "εκτός αν ρητά αναφέρεται διαφορετικά"
 
 #: .\templates\content_licenses\base.html.py:13
-msgid ""
-"Terms and conditions beyond the scope of this license may be available at"
+msgid "Terms and conditions beyond the scope of this license may be available at"
 msgstr "Όροι και συνθήκες που υπερβαίνουν το πεδίο της παρούσας άδειας ενδέχεται να είναι διαθέσιμα στο"
+
+#: .\templates\content_licenses\public-domain.html.py:5
+msgid "is released in the <strong>Public Domain</strong> and all intellectual property rights are waived by the author. Therefore, it may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived."
+msgstr "διανέμεται στο <strong>Δημόσιο Ιστοχώρο</strong> και ο συγγραφέας αποποιείται όλα τα πνευματικά δικαιώματα. Επομένως, μπορεί να αναπαραγθεί, διανεμηθεί, μεταδοθεί, χρησιμοποιηθεί, τροποποιηθεί, αποτελέσει τη βάση για περαιτέρω δημιουργία ή αλλιώς να γίνει αντικείμενο εκμετάλλευσης από οποιονδήποτε για οποιονδήποτε σκοπό, εμπορικό ή μη-εμπορικό, και κατά οποιονδήποτε τρόπο, συμπεριλαμβανομένων μεθόδων που δεν έχουν ακόμη εφευρεθεί η διανοηθεί."
 
