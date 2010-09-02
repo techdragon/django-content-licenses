@@ -1,9 +1,12 @@
 {% extends "content_licenses/base.html" %}
 
 {% load i18n %}
+{% load content_licenses_tags %}
+
 
 {% block rights %}{% trans "Some Rights Reserved" %}.{% endblock %}
 
 {% block terms %}
-{% trans "is licensed under a" %} <a rel="license" title="License of {{ content_title }}" href="{{ license_url }}">{{ license_name }}</a> {% trans "license" %}.
+{% set_license_link as the_license_link %}
+{% blocktrans %}is licensed under a {{ the_license_link }} license.{% endblocktrans %}
 {% endblock %}

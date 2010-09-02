@@ -32,18 +32,16 @@ In order to use these template tags you need to use the following in your templa
 
 from django import template
 from django.core.urlresolvers import reverse
+from django.utils.translation import ugettext_lazy as _
 
 
 register = template.Library()
 
 
+
 @register.inclusion_tag('content_licenses/default.html', takes_context=True)
 def embed_license(context):
     """
-    
-    THIS IS AN EXAMPLE.
-    
-    CREATE A TEMPLATE TAG LIKE THIS IN YOUR APP.
     
     rel-license Profile
     
@@ -56,7 +54,7 @@ def embed_license(context):
     return {
         'content_title': entry.title,
         'content_url': entry.get_absolute_url(),
-        'author_name': author_name(entry.author),
+        'author_name': entry.author.get_full_name() or entry.author.username,
         'author_url': reverse('author_profile', args=[entry.author.username]),
         'license_name': entry.license.name,
         'license_url': entry.license.url,
@@ -65,4 +63,36 @@ def embed_license(context):
         'template_name': entry.license.template_name,
         'pubdate': entry.date_published,
     }
+
+
+
+
+class SetLicenseLinkNode(template.Node):
+    def __init__(self, context_var):
+        self.context_var = context_var
+
+    def render(self, context):
+        LICENSE_LINK_TEMPLATE = "content_licenses/creative-commons-license-hyperlink.html"
+        t = template.loader.get_template(LICENSE_LINK_TEMPLATE)
+        context[self.context_var] = t.render(template.Context(context))
+        return ''
+
+def do_set_license_link(parser, token):
+    """
+    Stores the license link to a context variable.
+    
+    Usage::
+
+        {% license_link as [varname] %}
+    
+    """
+    bits = token.contents.split()
+    if len(bits) != 3:
+        raise template.TemplateSyntaxError('%s tag requires two arguments' % bits[0])
+    if bits[1] != 'as':
+        raise template.TemplateSyntaxError("first argument to %s tag must be 'as'" % bits[0])
+    return SetLicenseLinkNode(bits[2])
+
+register.tag('set_license_link', do_set_license_link)
+
 
