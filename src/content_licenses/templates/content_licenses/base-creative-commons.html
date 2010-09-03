@@ -8,8 +8,8 @@
 
 {% block attribution %}
     {% trans "The article" %} 
-    <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type" property="dc:title">
-        <em><a xmlns:cc="http://creativecommons.org/ns#" href="{{ content_url }}" rel="cc:attributionURL"
+    <span property="dc:title dcmitype:Text">
+        <em><a href="{{ content_url }}" rel="cc:attributionURL"
             property="cc:attributionName" title="{{ content_title }}">{{ content_title }}</a></em>
     </span>
     {% trans "by" %} 
@@ -24,6 +24,7 @@
 {% block extra_perms %}
     {% if extra_perms_url %}
         {% trans "Terms and conditions beyond the scope of this license may be available at" %}
-        <a xmlns:cc="http://creativecommons.org/ns#" rel="cc:morePermissions" title="{{ extra_perms_title }}" href="{{ extra_perms_url }}">{{ extra_perms_title }}</a>.
+        <a rel="cc:morePermissions" title="{{ extra_perms_title }}" 
+            href="{{ extra_perms_url }}">{{ extra_perms_title }}</a>.
     {% endif %}
 {% endblock %}
