@@ -6,7 +6,24 @@
 
 {% block rights %}{% trans "Some Rights Reserved" %}.{% endblock %}
 
+{% block attribution %}
+    {% trans "The article" %} 
+    <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type" property="dc:title">
+        <em><a xmlns:cc="http://creativecommons.org/ns#" href="{{ content_url }}" rel="cc:attributionURL"
+            property="cc:attributionName" title="{{ content_title }}">{{ content_title }}</a></em>
+    </span>
+    {% trans "by" %} 
+    <em><a title="{{ author_name }}" href="{{ author_url }}">{{ author_name }}</a></em>,
+{% endblock %}
+
 {% block terms %}
 {% set_license_link as the_license_link %}
 {% blocktrans %}is licensed under a {{ the_license_link }} license.{% endblocktrans %}
+{% endblock %}
+
+{% block extra_perms %}
+    {% if extra_perms_url %}
+        {% trans "Terms and conditions beyond the scope of this license may be available at" %}
+        <a xmlns:cc="http://creativecommons.org/ns#" rel="cc:morePermissions" title="{{ extra_perms_title }}" href="{{ extra_perms_url }}">{{ extra_perms_title }}</a>.
+    {% endif %}
 {% endblock %}
