@@ -39,34 +39,6 @@ register = template.Library()
 
 
 
-@register.inclusion_tag('content_licenses/default.html', takes_context=True)
-def embed_license(context):
-    """
-    
-    rel-license Profile
-    
-    <head profile='http://microformats.org/profile/rel-license'>
-    
-    http://microformats.org/wiki/rel-license
-    
-    """
-    entry = context['entry']
-    return {
-        'content_title': entry.title,
-        'content_url': entry.get_absolute_url(),
-        'author_name': entry.author.get_full_name() or entry.author.username,
-        'author_url': reverse('author_profile', args=[entry.author.username]),
-        'license_name': entry.license.name,
-        'license_url': entry.license.url,
-        'extra_perms_title': settings.PB_EXTRA_LICENSE_PERMISSIONS_PAGE_TITLE,
-        'extra_perms_url': settings.PB_EXTRA_LICENSE_PERMISSIONS_PAGE_URL,
-        'template_name': entry.license.template_name,
-        'pubdate': entry.date_published,
-    }
-
-
-
-
 class SetLicenseLinkNode(template.Node):
     def __init__(self, context_var):
         self.context_var = context_var

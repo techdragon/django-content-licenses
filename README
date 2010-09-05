@@ -31,7 +31,7 @@ USAGE
 Provides a modelfield:  LicenseField
 
 
-Expected template variables
+Expected context (template variables)
 
 content_title
 content_url
@@ -43,3 +43,4 @@ extra_perms_title
 extra_perms_url
 template_name
 pubdate
+semantics

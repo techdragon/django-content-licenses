@@ -8,23 +8,26 @@
 
 {% block attribution %}
     {% trans "The article" %} 
-    <span property="dc:title dcmitype:Text">
-        <em><a href="{{ content_url }}" rel="cc:attributionURL"
-            property="cc:attributionName" title="{{ content_title }}">{{ content_title }}</a></em>
-    </span>
+    {% if semantics %}<span property="dc:title dcmitype:Text">{% endif %}
+        <em>
+        <a href="{{ content_url }}" title="{{ content_title }}"
+            {% if semantics %}rel="cc:attributionURL" property="cc:attributionName"{% endif %}
+                >{{ content_title }}</a>
+        </em>
+    {% if semantics %}</span>{% endif %}
     {% trans "by" %} 
     <em><a title="{{ author_name }}" href="{{ author_url }}">{{ author_name }}</a></em>,
 {% endblock %}
 
 {% block terms %}
-{% set_license_link as the_license_link %}
-{% blocktrans %}is licensed under a {{ the_license_link }} license.{% endblocktrans %}
+	{% set_license_link as the_license_link %}
+	{% blocktrans %}is licensed under a {{ the_license_link }} license.{% endblocktrans %}
 {% endblock %}
 
 {% block extra_perms %}
     {% if extra_perms_url %}
         {% trans "Terms and conditions beyond the scope of this license may be available at" %}
-        <a rel="cc:morePermissions" title="{{ extra_perms_title }}" 
+        <a {% if semantics %}rel="cc:morePermissions"{% endif %} title="{{ extra_perms_title }}" 
             href="{{ extra_perms_url }}">{{ extra_perms_title }}</a>.
     {% endif %}
 {% endblock %}
