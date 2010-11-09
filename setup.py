@@ -1,7 +1,16 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  Copyright (c) 2010 George Notaras, G-Loaded.eu, CodeTRAX.org
+#  This file is part of django-content-licenses.
+#
+#  django-content-licenses - 
+#
+#  Development Web Site:
+#    - http://www.codetrax.org/projects/django-content-licenses
+#  Public Source Code Repository:
+#    - https://source.codetrax.org/hgroot/django-content-licenses
+#
+#  Copyright 2010 George Notaras <gnot [at] g-loaded.eu>
 #
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
@@ -35,19 +44,26 @@
 #    python setup.py install --prefix=/usr
 #
 
+import sys
+import os
+sys.path.insert(0, os.path.abspath('src'))
+
 from setuptools import setup
+
+from content_licenses import get_version, long_description
 
 if __name__=='__main__':
     setup(
         name = 'django-content-licenses',
-        version = '0.1.0',
+        version = get_version(),
+        license = 'Apache License version 2',
         author = 'George Notaras',
-        author_email = 'gnot@g-loaded.eu',
+        author_email = 'gnot [at] g-loaded.eu',
         maintainer = 'George Notaras',
-        maintainer_email = 'gnot@g-loaded.eu',
-        url = 'https://source.codetrax.org/hgroot/django-content-licenses',
-        description = 'Provides a license field.',
-        long_description = 'Provides a license field.',
+        maintainer_email = 'gnot [at] g-loaded.eu',
+        url = 'http://www.codetrax.org/projects/django-content-licenses',
+        description = 'django-content-licenses is a ...',
+        long_description = long_description,
         download_url = 'https://source.codetrax.org/hgroot/django-content-licenses',
         classifiers = [
             'Development Status :: 4 - Beta',
@@ -58,18 +74,13 @@ if __name__=='__main__':
             'Natural Language :: English',
             'Operating System :: OS Independent',
             'Programming Language :: Python',
+            'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
             'Topic :: Software Development :: Libraries :: Application Frameworks',
             'Topic :: Software Development :: Libraries :: Python Modules',
         ],
-        license = 'Apache License version 2',
-        packages = [
-            'content_licenses',
-        ],
         package_dir = {'': 'src'},
+        packages = ['content_licenses'],
         include_package_data = True,
-        zip_safe = False,
-        install_requires = [
-            'Django',
-        ],
+        #zip_safe = False,
     )
 

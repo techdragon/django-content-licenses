@@ -1,0 +1,2 @@
+django-content-licenses
+Django

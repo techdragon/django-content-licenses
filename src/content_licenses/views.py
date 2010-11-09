@@ -2,13 +2,14 @@
 #
 #  This file is part of django-content-licenses.
 #
-#  django-content-licenses provides licensing for content.
+#  django-content-licenses - 
 #
-#  Project development web site:
+#  Development Web Site:
+#    - http://www.codetrax.org/projects/django-content-licenses
+#  Public Source Code Repository:
+#    - https://source.codetrax.org/hgroot/django-content-licenses
 #
-#      http://www.codetrax.org/projects/django-content-licenses
-#
-#  Copyright (c) 2010 George Notaras, G-Loaded.eu, CodeTRAX.org
+#  Copyright 2010 George Notaras <gnot [at] g-loaded.eu>
 #
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
