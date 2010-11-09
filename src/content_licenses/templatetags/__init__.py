@@ -2,7 +2,7 @@
 #
 #  This file is part of django-content-licenses.
 #
-#  django-content-licenses - 
+#  django-content-licenses adds support for content licenses in Django.
 #
 #  Development Web Site:
 #    - http://www.codetrax.org/projects/django-content-licenses

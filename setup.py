@@ -3,7 +3,7 @@
 #
 #  This file is part of django-content-licenses.
 #
-#  django-content-licenses - 
+#  django-content-licenses adds support for content licenses in Django.
 #
 #  Development Web Site:
 #    - http://www.codetrax.org/projects/django-content-licenses
@@ -62,7 +62,7 @@ if __name__=='__main__':
         maintainer = 'George Notaras',
         maintainer_email = 'gnot [at] g-loaded.eu',
         url = 'http://www.codetrax.org/projects/django-content-licenses',
-        description = 'django-content-licenses is a ...',
+        description = 'django-content-licenses adds support for content licenses in Django.',
         long_description = long_description,
         download_url = 'https://source.codetrax.org/hgroot/django-content-licenses',
         classifiers = [
