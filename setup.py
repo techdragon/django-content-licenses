@@ -3,7 +3,7 @@
 #
 #  This file is part of django-content-licenses.
 #
-#  django-content-licenses adds support for content licenses in Django.
+#  DESCRIPTION_DESCRIPTION_DESCRIPTION
 #
 #  Development Web Site:
 #    - http://www.codetrax.org/projects/django-content-licenses
@@ -50,7 +50,11 @@ sys.path.insert(0, os.path.abspath('src'))
 
 from setuptools import setup
 
-from content_licenses import get_version, long_description
+from content_licenses import get_version
+
+def read(fname):
+    """Utility function to read the README file."""
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 if __name__=='__main__':
     setup(
@@ -62,9 +66,10 @@ if __name__=='__main__':
         maintainer = 'George Notaras',
         maintainer_email = 'gnot [at] g-loaded.eu',
         url = 'http://www.codetrax.org/projects/django-content-licenses',
-        description = 'django-content-licenses adds support for content licenses in Django.',
-        long_description = long_description,
+        description = 'DESCRIPTION_DESCRIPTION_DESCRIPTION',
+        long_description = read('README'),
         download_url = 'https://source.codetrax.org/hgroot/django-content-licenses',
+        platforms=['any'],
         classifiers = [
             'Development Status :: 4 - Beta',
             'Environment :: Web Environment',
