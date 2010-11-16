@@ -24,21 +24,9 @@
 #  limitations under the License.
 #
 
-VERSION = (0, 2, 0, 'final', 0)
+VERSION = (0, 2, 1, 'final', 0)
 
 def get_version():
     version = '%d.%d.%d' % (VERSION[0], VERSION[1], VERSION[2])
     return version
 
-
-long_description = """
-This is a ...
-
-More information about the installation, configuration and usage of this app
-can be found in the *HELP* file inside the distribution package or in the
-project's `wiki <http://www.codetrax.org/projects/django-content-licenses/wiki>`_.
-
-Spotted a bug or have a feature request? Feel free to file a report at the
-project's `issue tracker <http://www.codetrax.org/projects/django-content-licenses/issues>`_.
-
-"""
