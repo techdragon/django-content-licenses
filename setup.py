@@ -3,7 +3,7 @@
 #
 #  This file is part of django-content-licenses.
 #
-#  DESCRIPTION_DESCRIPTION_DESCRIPTION
+#  django-content-licenses is a Django app that adds support for adding licensing information to content.
 #
 #  Development Web Site:
 #    - http://www.codetrax.org/projects/django-content-licenses
@@ -66,7 +66,7 @@ if __name__=='__main__':
         maintainer = 'George Notaras',
         maintainer_email = 'gnot [at] g-loaded.eu',
         url = 'http://www.codetrax.org/projects/django-content-licenses',
-        description = 'DESCRIPTION_DESCRIPTION_DESCRIPTION',
+        description = 'django-content-licenses is a Django app that adds support for adding licensing information to content.',
         long_description = read('README'),
         download_url = 'https://source.codetrax.org/hgroot/django-content-licenses',
         platforms=['any'],

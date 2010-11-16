@@ -6,7 +6,7 @@ Introduction
 This section contains an introduction to *django-content-licenses*, including general
 information about how to submit bug reports and make feature requests.
 
-DESCRIPTION_DESCRIPTION_DESCRIPTION
+django-content-licenses is a Django app that adds support for adding licensing information to content.
 
 Licensed under the *Apache License version 2.0*. More licensing information
 exists in the license_ section.

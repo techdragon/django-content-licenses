@@ -17,7 +17,7 @@ Welcome to the *django-content-licenses*'s documentation!
 About this project
 ==================
 
-DESCRIPTION_DESCRIPTION_DESCRIPTION
+django-content-licenses is a Django app that adds support for adding licensing information to content.
 
 | **Author**: `George Notaras <http://www.g-loaded.eu/>`_
 | **Development Web Site**: `django-content-licenses project <http://www.codetrax.org/projects/django-content-licenses>`_
