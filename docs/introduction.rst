@@ -15,8 +15,8 @@ exists in the license_ section.
 Features
 ========
 
-- Feature A
-- Feature B
+- Provides the ``LicenseField`` model field.
+- Templates for licenses
 
 
 Documentation

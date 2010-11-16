@@ -7,6 +7,12 @@ This section contains information, including examples, about how to use
 *django-content-licenses* in your existing Django projects or applications.
 
 
+The LicenseField
+================
+
+.. autoclass:: content_licenses.fields.LicenseField
+
+
 Template Variables
 ==================
 
