@@ -21,20 +21,24 @@ In the Django project's ``settings`` module, add ``content_licenses`` to the
     )
 
 
-Reference of the application settings
-=====================================
-
-The following settings can be specified in the Django project's ``settings``
-module to customize the functionality of *django-content-licenses*.
-
-``SETTING_A``
-    Setting A ...
-
-
 Synchronize the project database
 ================================
 
 Finally, synchronize the project's database using the following command::
 
     python manage.py syncdb
+
+
+Load initial data
+=================
+
+Although optional, several commonly used licenses can be loaded by running the
+following::
+
+    python manage.py loaddata content_licenses
+
+The ``fixtures/content_licenses.json`` data has been exported using the
+following command::
+    
+    python manage.py dumpdata --indent=4 content_licenses.License > content_licenses.json
 
