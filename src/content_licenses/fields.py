@@ -28,7 +28,9 @@ from django.db import models
 
 
 class LicenseField(models.ForeignKey):
-
+    """The LicenseField makes it possible to select one of the available licenses.
+    
+    """
     def __init__(self, **kwargs):
         super(LicenseField, self).__init__('content_licenses.License',
             related_name='%(class)s_license', **kwargs)
