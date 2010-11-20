@@ -7,5 +7,5 @@ include MANIFEST.in
 include requirements.txt
 include setup.cfg
 include setup.py
-recursive-include src/content_licenses *.py *.html *.json
+recursive-include src/content_licenses *.py *.json *.mo *.po *.html
 graft docs
