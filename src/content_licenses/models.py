@@ -42,6 +42,10 @@ class License(models.Model):
     description = models.TextField(blank=True, null=True)
     is_active = models.BooleanField(default=True,
         help_text="""Disable, if license shouldn't be available to users any more.""")
+    
+    date_created = models.DateTimeField(verbose_name='created on', auto_now_add=True)
+    date_modified = models.DateTimeField(verbose_name='last modified on', auto_now=True)
+    #created_by = models.ForeignKey('auth.User', related_name='%(class)s_created_by')
 
     def __unicode__(self):
         return self.name
