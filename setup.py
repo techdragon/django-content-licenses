@@ -84,7 +84,10 @@ if __name__=='__main__':
             'Topic :: Software Development :: Libraries :: Python Modules',
         ],
         package_dir = {'': 'src'},
-        packages = ['content_licenses'],
+        packages = [
+            'content_licenses',
+            'content_licenses.templatetags',
+        ],
         include_package_data = True,
         #zip_safe = False,
     )
