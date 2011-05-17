@@ -9,7 +9,9 @@
             "abbreviation": "all rights reserved", 
             "logo": "", 
             "slug": "all-rights-reserved", 
-            "name": "All Rights Reserved"
+            "name": "All Rights Reserved",
+            "date_created": "1970-01-01 00:00:01", 
+            "date_modified": "1970-01-01 00:00:01"
         }
     }, 
     {
@@ -22,7 +24,9 @@
             "abbreviation": "pd", 
             "logo": "", 
             "slug": "public-domain", 
-            "name": "Public Domain"
+            "name": "Public Domain",
+            "date_created": "1970-01-01 00:00:01", 
+            "date_modified": "1970-01-01 00:00:01" 
         }
     }, 
     {
@@ -35,7 +39,9 @@
             "abbreviation": "cc by-nc-nd", 
             "logo": "http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png", 
             "slug": "creative-commons-attribution-non-commercial-no-derivatives", 
-            "name": "Creative Commons - Attribution Non-commercial No Derivatives"
+            "name": "Creative Commons - Attribution Non-commercial No Derivatives",
+            "date_created": "1970-01-01 00:00:01", 
+            "date_modified": "1970-01-01 00:00:01" 
         }
     }, 
     {
@@ -48,7 +54,9 @@
             "abbreviation": "cc by-nc-sa", 
             "logo": "http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png", 
             "slug": "creative-commons-attribution-non-commercial-share-alike", 
-            "name": "Creative Commons - Attribution Non-commercial Share Alike"
+            "name": "Creative Commons - Attribution Non-commercial Share Alike",
+            "date_created": "1970-01-01 00:00:01", 
+            "date_modified": "1970-01-01 00:00:01" 
         }
     }, 
     {
@@ -61,7 +69,9 @@
             "abbreviation": "cc by-nc", 
             "logo": "http://i.creativecommons.org/l/by-nc/3.0/88x31.png", 
             "slug": "creative-commons-attribution-non-commercial", 
-            "name": "Creative Commons - Attribution Non-commercial"
+            "name": "Creative Commons - Attribution Non-commercial",
+            "date_created": "1970-01-01 00:00:01", 
+            "date_modified": "1970-01-01 00:00:01" 
         }
     }, 
     {
@@ -74,7 +84,9 @@
             "abbreviation": "cc by-nd", 
             "logo": "http://i.creativecommons.org/l/by-nd/3.0/88x31.png", 
             "slug": "creative-commons-attribution-no-derivatives", 
-            "name": "Creative Commons - Attribution No Derivatives"
+            "name": "Creative Commons - Attribution No Derivatives",
+            "date_created": "1970-01-01 00:00:01", 
+            "date_modified": "1970-01-01 00:00:01" 
         }
     }, 
     {
@@ -87,7 +99,9 @@
             "abbreviation": "cc by-sa", 
             "logo": "http://i.creativecommons.org/l/by-sa/3.0/88x31.png", 
             "slug": "creative-commons-attribution-share-alike", 
-            "name": "Creative Commons - Attribution Share Alike"
+            "name": "Creative Commons - Attribution Share Alike",
+            "date_created": "1970-01-01 00:00:01", 
+            "date_modified": "1970-01-01 00:00:01" 
         }
     }, 
     {
@@ -100,7 +114,9 @@
             "abbreviation": "cc by", 
             "logo": "http://i.creativecommons.org/l/by/3.0/88x31.png", 
             "slug": "creative-commons-attribution", 
-            "name": "Creative Commons - Attribution"
+            "name": "Creative Commons - Attribution",
+            "date_created": "1970-01-01 00:00:01", 
+            "date_modified": "1970-01-01 00:00:01" 
         }
     }
 ]
